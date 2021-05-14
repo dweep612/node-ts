@@ -4,7 +4,10 @@
   "description": "A Node Project with Typescript",
   "main": "dist/app.js",
   "scripts": {
-    "start": "tsc && node dist/app.js",
+    "tsc": "tsc",
+    "watch-tsc": "tsc -w",
+    "dev": "nodemon dist/app.js",
+    "prod": "node dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +23,7 @@
   "devDependencies": {
     "@types/express": "^4.16.1",
     "@types/node": "^15.0.3",
+    "nodemon": "^2.0.7",
     "tslint": "^5.12.1",
     "typescript": "^4.2.4"
   },
